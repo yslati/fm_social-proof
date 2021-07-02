@@ -1,0 +1,263 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(335deg, #861657 0%, #ffa69e 74%);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    width: 1440px;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Spartan', sans-serif;
+    border-radius: 10px;
+}
+
+.head {
+    padding: 120px 120px 0 120px;
+    background-image: url('../images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    width: 50%;
+    height: 100%;
+    margin-right: 150px ;
+}
+.info h1 {
+    font-size: 47px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 45px;
+    color: hsl(300, 43%, 22%);
+}
+
+.info p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: hsl(303, 10%, 53%);
+    line-height: 25px;
+}
+.stars {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.star {
+    margin-left: auto;
+    width: 400px;
+    padding: 20px 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+}
+
+.star:last-child {
+    margin-bottom: 0;
+}
+
+.star h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.star h4:hover {
+    color: hsl(300, 44%, 32%);
+}
+
+.star--svg {
+    margin-right: 25px;
+}
+
+.star--svg svg {
+    fill: #eb9143;
+    fill-rule: nonzero;
+}
+
+.star--svg svg:hover {
+    fill: #f7a156;
+}
+
+.star--1 {
+    margin-right: 120px;
+}
+.star--2 {
+    margin-right: 60px;
+}
+
+.feedback {
+    background-image: url('../images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    height: 50%;
+    padding: 0 120px 70px 120px;
+    display: flex;
+}
+
+.costumer {
+    width: 30%;
+    height: 180px;
+    padding: 35px 20px;
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 30px;
+    margin-top: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.costumer:last-child {
+    margin-right: 0;
+}
+
+.costumer--head{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.costumer--head--name {
+    margin: auto 0;
+}
+
+.costumer--head::before {
+    width: 50px;
+    height: 50px;
+    content: ' ';
+    background-size: 50px 50px;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.costumer--head--1::before {
+    background-image: url('../images/image-colton.jpg');
+}
+
+.costumer--head--2::before {
+    background-image: url('../images/image-irene.jpg');
+}
+
+.costumer--head--3::before {
+    background-image: url('../images/image-anne.jpg');
+}
+
+.costumer h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+.costumer h4 {
+    color: hsl(333, 80%, 67%);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.costumer h4:hover {
+    color: hsl(333, 100%, 74%);
+}
+
+.costumer p {
+    color: hsl(0, 0%, 100%);
+    line-height: 24px;
+    font-size: 17px;
+}
+
+
+.costumer--1 {    
+    margin-bottom: 40px;
+}
+
+.costumer--2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+    html {
+        overflow-y: scroll;
+    }
+    .body {
+        position: absolute;
+        width: 375px;
+        
+    }
+    .card {
+        width: 100%;
+        height: 100vh;
+        padding: 80px 30px;
+        /* justify-content: space-between; */
+    }
+    .head {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+    }
+    .info {
+        width: 100%;
+        margin: 0;
+    }
+    .info h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .info p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .stars {
+        margin: 40px 0;
+        width: 100%;
+    }
+    .star {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+        margin-bottom: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .star h4 {
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    .star--svg {
+        margin: 0;
+    }
+    .feedback {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .costumer {
+        width: 82%;
+        height: 200px;
+        padding: 25px;
+
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .costumer p {
+        font-size: 15px;
+    }
+}
